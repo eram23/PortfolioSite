@@ -1,0 +1,95 @@
+body {
+    font-family: 'Montserrat';
+}
+
+nav {
+    background-color: white;
+    
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+.navbar-toggler{
+    max-width: 50%;
+}
+
+.active {
+    color: rgb(0,98,105);
+}
+
+.green-section {
+    padding: 450px 0px;
+    background-color: rgb(7, 66, 49);
+}
+
+.hero-header {
+    font-family: 'DM Serif Display', serif;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    border-bottom: solid 2px white;
+    width: fit-content;
+}
+
+.hero h2 {
+    margin-top: 25%;
+    margin-bottom: 0%;
+}
+
+.work {
+    background-color: rgb(255, 254, 239);
+    height: auto;
+    padding: 100px 0px;
+}
+
+.project {
+    padding-bottom: 1.5rem;
+}
+
+.card-title {
+    font-family: 'DM Serif Display', serif;
+}
+
+.btn-primary {
+    background-color: rgb(7, 66, 49);
+    border: solid 1px rgb(7, 66, 49);
+}
+
+.btn-primary:hover {
+    background-color: rgb(12, 119, 89);
+    border: solid 1px rgb(12, 119, 89);
+}
+
+.about-header
+{
+    font-family: 'DM Serif Display', serif;
+    color: white;
+    margin-top: 25%;
+}
+
+@media (max-width: 768px) {
+    
+    .hero {
+        padding: 150px 0px;
+        background-color: rgb(7, 66, 49);
+    }
+
+    h1 {
+        color: white;
+        /* margin-top: 15px; */
+        /* padding-top: 50px; */
+        margin-bottom: 15px;
+
+    }
+
+ }
