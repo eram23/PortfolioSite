@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat';
 }
 
+.text-green {
+    color: rgb(7, 66, 49);
+}
+
 nav {
     background-color: white;
     
@@ -33,12 +37,14 @@ nav {
 .hero-header {
     font-family: 'DM Serif Display', serif;
     color: white;
+    margin: 1rem 0;
 }
 
 .hero h1 {
     font-size: 3em;
     border-bottom: solid 2px white;
     width: fit-content;
+    padding-bottom: .25rem;
 }
 
 .hero h2 {
@@ -58,16 +64,51 @@ nav {
 
 .card-title {
     font-family: 'DM Serif Display', serif;
+    color:  rgb(7, 66, 49);
 }
 
 .btn-primary {
     background-color: rgb(7, 66, 49);
     border: solid 1px rgb(7, 66, 49);
+    --bs-btn-active-bg: rgb(7, 66, 49);
+    --bs-btn-active-border-color: rgb(7, 66, 49);
 }
 
 .btn-primary:hover {
     background-color: rgb(12, 119, 89);
     border: solid 1px rgb(12, 119, 89);
+}
+
+.btn-secondary {
+    background-color: white;
+    border: solid 1px rgb(7, 66, 49);
+    color: rgb(7, 66, 49);
+    --bs-btn-active-bg: rgb(12, 119, 89);
+}
+
+.btn-secondary:hover {
+    background-color: rgb(12, 119, 89);
+    border: solid 1px rgb(12, 119, 89);
+    color: white;
+}
+
+.btn-secondary:active {
+    background-color: rgb(12, 119, 89);
+    border: solid 1px rgb(12, 119, 89);
+    color: white;
+}
+
+
+.btn-dark {
+    background-color: rgb(7, 66, 49);
+    border: solid 1px white;
+    --bs-btn-active-bg: rgb(12, 119, 89);
+    --bs-btn-active-border-color: white;
+}
+
+.btn-dark:hover {
+    background-color: rgb(12, 119, 89);
+    border: solid 1px white;
 }
 
 .about-header
@@ -80,7 +121,7 @@ nav {
 @media (max-width: 768px) {
     
     .hero {
-        padding: 150px 0px;
+        padding: 5rem 0px;
         background-color: rgb(7, 66, 49);
     }
 
