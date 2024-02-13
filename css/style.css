@@ -48,7 +48,7 @@ nav {
 }
 
 .hero h2 {
-    margin-top: 25%;
+    margin-top: 20%;
     margin-bottom: 0%;
 }
 
@@ -116,6 +116,28 @@ nav {
     font-family: 'DM Serif Display', serif;
     color: white;
     margin-top: 25%;
+}
+
+.contact-header
+{
+    font-family: 'DM Serif Display', serif;
+    color: white;
+}
+
+.social-links {
+    list-style: none;
+    display: inline-block;
+    justify-content: left;
+}
+
+.social-links li {
+    max-width: fit-content;
+    
+}
+
+.social-media-icon {
+    max-width: 1.5em;
+    margin-right: 2em;
 }
 
 @media (max-width: 768px) {
