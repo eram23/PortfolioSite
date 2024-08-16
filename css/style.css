@@ -1,5 +1,6 @@
 :root {
     --main-color-pinegreen: rgb(7, 66, 49);
+    --main-color-black: #222222;
 }
 
 body {
@@ -43,25 +44,46 @@ nav {
     background-color: var(--main-color-pinegreen);
 }
 
+/* HERO SECTION STYLING */
+
+.hero {
+    background-color: var(--main-color-black);
+    padding: 10em 0;
+}
+
 .hero-header {
     font-family: 'DM Serif Display', serif;
     color: white;
-    margin: 0 auto;
-    display:inline-block;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero h1 {
     font-size: 4vw;
     border-bottom: solid 2px white;
     width: fit-content;
-    padding-bottom: .25rem;
 }
 
+.subheader {
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+.btn-dark {
+    background-color: rgb(7, 66, 49);
+    --bs-btn-active-bg: rgb(12, 119, 89);
+    padding: 1em 1.5em;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.btn-dark:hover {
+    background-color: rgb(12, 119, 89);
+}
+
+/* WORK SECTION */
 
 .work {
-    background-color: rgb(255, 254, 239);
+    background-color: whitesmoke;
     height: auto;
     padding: 6em 0;
 }
@@ -70,14 +92,23 @@ nav {
     padding-bottom: 1.5rem;
 }
 
+.card {
+    height: auto;
+}
+
+
+
 .card-title {
     font-family: 'DM Serif Display', serif;
-    color:  rgb(7, 66, 49);
+    color:  var(--main-color-pinegreen);
+    font-size: 1.75em;
+    font-weight: 500;
 }
+
+
 
 .btn-primary {
     background-color: rgb(7, 66, 49);
-    border: solid 1px rgb(7, 66, 49);
     --bs-btn-active-bg: rgb(7, 66, 49);
     --bs-btn-active-border-color: rgb(7, 66, 49);
 }
@@ -106,17 +137,9 @@ nav {
     color: white;
 }
 
-
-.btn-dark {
-    background-color: rgb(7, 66, 49);
-    border: solid 1px white;
-    --bs-btn-active-bg: rgb(12, 119, 89);
-    --bs-btn-active-border-color: white;
-}
-
-.btn-dark:hover {
-    background-color: rgb(12, 119, 89);
-    border: solid 1px white;
+/* ABOUT ME SECTION */
+.about-me-section {
+    background-color: var(--main-color-pinegreen);
 }
 
 .about-header
@@ -124,6 +147,11 @@ nav {
     font-family: 'DM Serif Display', serif;
     color: white;
     margin-top: 25%;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    background-color: var(--main-color-black);
 }
 
 .contact-header
@@ -149,10 +177,14 @@ nav {
 }
 
 @media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        padding: 0 1em;
+    }
     
     .hero {
         padding: 5rem 0px;
-        background-color: rgb(7, 66, 49);
     }
 
     h1 {
@@ -161,6 +193,15 @@ nav {
         /* padding-top: 50px; */
         margin-bottom: 15px;
 
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body .btn-primary {
+        margin-bottom: 1em;
     }
 
  }
