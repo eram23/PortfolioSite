@@ -137,7 +137,7 @@ nav {
 /* ABOUT ME SECTION */
 .about-me-section {
     background-color: var(--main-color-pinegreen);
-    padding: 3em 0;
+    padding: 6em 0;
 }
 
 .about-me-section p {
@@ -152,7 +152,7 @@ nav {
 /* CONTACT SECTION */
 .contact-section {
     background-color: var(--main-color-black);
-    padding: 3em 0;
+    padding: 6em 0;
 }
 
 .contact-header
