@@ -39,11 +39,6 @@ nav {
     color: rgb(0,98,105);
 }
 
-.green-section {
-    height: 100vh;
-    background-color: var(--main-color-pinegreen);
-}
-
 /* HERO SECTION STYLING */
 
 .hero {
@@ -96,7 +91,9 @@ nav {
     height: auto;
 }
 
-
+.card p {
+    line-height: 1.75;
+}
 
 .card-title {
     font-family: 'DM Serif Display', serif;
@@ -140,18 +137,22 @@ nav {
 /* ABOUT ME SECTION */
 .about-me-section {
     background-color: var(--main-color-pinegreen);
+    padding: 3em 0;
 }
 
+.about-me-section p {
+    line-height: 1.75;
+}
 .about-header
 {
     font-family: 'DM Serif Display', serif;
     color: white;
-    margin-top: 25%;
 }
 
 /* CONTACT SECTION */
 .contact-section {
     background-color: var(--main-color-black);
+    padding: 3em 0;
 }
 
 .contact-header
